@@ -618,7 +618,7 @@ border-radius: 15px!important;
 	transform: scale(1.5) rotate(12deg);
 }
 .article img{
-/*	max-width: 90%;*/
+	/*max-width: 90%;*/
 	border-radius: 15px;
 	transition: .3s;
 }
