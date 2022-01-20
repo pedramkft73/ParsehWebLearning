@@ -1,0 +1,12 @@
+2022-01-16T18:01:54+00:00 CRITICAL syntax error, unexpected token "echo" در C:\xampp\htdocs\ParsehWebLearning\wp-content\themes\Parsehshop\templates\about.php در خط 15
+
+2022-01-16T18:02:18+00:00 CRITICAL syntax error, unexpected token "echo" در C:\xampp\htdocs\ParsehWebLearning\wp-content\themes\Parsehshop\templates\about.php در خط 15
+
+2022-01-16T18:02:45+00:00 CRITICAL syntax error, unexpected token "}", expecting "," or ";" در C:\xampp\htdocs\ParsehWebLearning\wp-content\themes\Parsehshop\templates\about.php در خط 16
+
+2022-01-16T18:03:12+00:00 CRITICAL syntax error, unexpected token "}", expecting "," or ";" در C:\xampp\htdocs\ParsehWebLearning\wp-content\themes\Parsehshop\templates\about.php در خط 16
+
+2022-01-16T18:04:01+00:00 CRITICAL syntax error, unexpected token "}", expecting "," or ";" در C:\xampp\htdocs\ParsehWebLearning\wp-content\themes\Parsehshop\templates\about.php در خط 16
+
+2022-01-16T18:35:41+00:00 CRITICAL Maximum execution time of 120 seconds exceeded در C:\xampp\htdocs\ParsehWebLearning\wp-admin\includes\class-wp-filesystem-direct.php در خط 82
+

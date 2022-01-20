@@ -1,0 +1,16 @@
+2022-01-06T06:54:41+00:00 CRITICAL Uncaught Error: Undefined constant "nulll" in C:\xampp\htdocs\ParsehWebLearning\wp-content\themes\Parsehshop\template-parts\single\body-footer.php:16
+Stack trace:
+#0 C:\xampp\htdocs\ParsehWebLearning\wp-includes\template.php(772): require()
+#1 C:\xampp\htdocs\ParsehWebLearning\wp-includes\template.php(716): load_template('C:\\xampp\\htdocs...', false, Array)
+#2 C:\xampp\htdocs\ParsehWebLearning\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 C:\xampp\htdocs\ParsehWebLearning\wp-content\themes\Parsehshop\template-parts\single\main-body.php(13): get_template_part('template-parts/...')
+#4 C:\xampp\htdocs\ParsehWebLearning\wp-includes\template.php(772): require('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\ParsehWebLearning\wp-includes\template.php(716): load_template('C:\\xampp\\htdocs...', false, Array)
+#6 C:\xampp\htdocs\ParsehWebLearning\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#7 C:\xampp\htdocs\ParsehWebLearning\wp-content\themes\Parsehshop\singular.php(8): get_template_part('template-parts/...')
+#8 C:\xampp\htdocs\ParsehWebLearning\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\ParsehWebLearning\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\ParsehWebLearning\index.php(17): require('C:\\xampp\\htdocs...')
+#11 {main}
+  thrown در C:\xampp\htdocs\ParsehWebLearning\wp-content\themes\Parsehshop\template-parts\single\body-footer.php در خط 16
+

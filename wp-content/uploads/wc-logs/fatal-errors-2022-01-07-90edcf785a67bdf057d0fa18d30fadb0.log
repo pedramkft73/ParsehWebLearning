@@ -1,0 +1,64 @@
+2022-01-07T18:11:43+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function get_avatar(), 0 passed in C:\xampp\htdocs\ParsehWebLearning\wp-content\themes\Parsehshop\comments.php on line 14 and at least 1 expected in C:\xampp\htdocs\ParsehWebLearning\wp-includes\pluggable.php:2663
+Stack trace:
+#0 C:\xampp\htdocs\ParsehWebLearning\wp-content\themes\Parsehshop\comments.php(14): get_avatar()
+#1 C:\xampp\htdocs\ParsehWebLearning\wp-includes\class-walker-comment.php(179): parsehshop_comment_callback(Object(WP_Comment), Array, 1)
+#2 C:\xampp\htdocs\ParsehWebLearning\wp-includes\class-wp-walker.php(144): Walker_Comment->start_el('', Object(WP_Comment), 1, Array)
+#3 C:\xampp\htdocs\ParsehWebLearning\wp-includes\class-walker-comment.php(139): Walker->display_element(Object(WP_Comment), Array, '2', 0, Array, '')
+#4 C:\xampp\htdocs\ParsehWebLearning\wp-includes\class-wp-walker.php(387): Walker_Comment->display_element(Object(WP_Comment), Array, '2', 0, Array, '')
+#5 C:\xampp\htdocs\ParsehWebLearning\wp-includes\comment-template.php(2250): Walker->paged_walk(Array, '2', 0, 0, Array)
+#6 C:\xampp\htdocs\ParsehWebLearning\wp-content\themes\Parsehshop\comments.php(4): wp_list_comments(Array)
+#7 C:\xampp\htdocs\ParsehWebLearning\wp-includes\comment-template.php(1554): require('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\ParsehWebLearning\wp-content\themes\Parsehshop\template-parts\single\main-body.php(14): comments_template()
+#9 C:\xampp\htdocs\ParsehWebLearning\wp-includes\template.php(772): require('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\ParsehWebLearning\wp-includes\template.php(716): load_template('C:\\xampp\\htdocs...', false, Array)
+#11 C:\xampp\htdocs\ParsehWebLearning\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#12 C:\xampp\htdocs\ParsehWebLearning\wp-content\themes\Parsehshop\singular.php(8): get_template_part('template-parts/...')
+#13 C:\xampp\htdocs\ParsehWebLearning\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#14 C:\xampp\htdocs\ParsehWebLearning\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#15 C:\xampp\htdocs\ParsehWebLearning\index.php(17): require('C:\\xampp\\htdocs...')
+#16 {main}
+  thrown در C:\xampp\htdocs\ParsehWebLearning\wp-includes\pluggable.php در خط 2663
+
+2022-01-07T18:12:57+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function get_avatar(), 0 passed in C:\xampp\htdocs\ParsehWebLearning\wp-content\themes\Parsehshop\comments.php on line 11 and at least 1 expected in C:\xampp\htdocs\ParsehWebLearning\wp-includes\pluggable.php:2663
+Stack trace:
+#0 C:\xampp\htdocs\ParsehWebLearning\wp-content\themes\Parsehshop\comments.php(11): get_avatar()
+#1 C:\xampp\htdocs\ParsehWebLearning\wp-includes\class-walker-comment.php(179): parsehshop_comment_callback(Object(WP_Comment), Array, 1)
+#2 C:\xampp\htdocs\ParsehWebLearning\wp-includes\class-wp-walker.php(144): Walker_Comment->start_el('', Object(WP_Comment), 1, Array)
+#3 C:\xampp\htdocs\ParsehWebLearning\wp-includes\class-walker-comment.php(139): Walker->display_element(Object(WP_Comment), Array, '2', 0, Array, '')
+#4 C:\xampp\htdocs\ParsehWebLearning\wp-includes\class-wp-walker.php(387): Walker_Comment->display_element(Object(WP_Comment), Array, '2', 0, Array, '')
+#5 C:\xampp\htdocs\ParsehWebLearning\wp-includes\comment-template.php(2250): Walker->paged_walk(Array, '2', 0, 0, Array)
+#6 C:\xampp\htdocs\ParsehWebLearning\wp-content\themes\Parsehshop\comments.php(4): wp_list_comments(Array)
+#7 C:\xampp\htdocs\ParsehWebLearning\wp-includes\comment-template.php(1554): require('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\ParsehWebLearning\wp-content\themes\Parsehshop\template-parts\single\main-body.php(14): comments_template()
+#9 C:\xampp\htdocs\ParsehWebLearning\wp-includes\template.php(772): require('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\ParsehWebLearning\wp-includes\template.php(716): load_template('C:\\xampp\\htdocs...', false, Array)
+#11 C:\xampp\htdocs\ParsehWebLearning\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#12 C:\xampp\htdocs\ParsehWebLearning\wp-content\themes\Parsehshop\singular.php(8): get_template_part('template-parts/...')
+#13 C:\xampp\htdocs\ParsehWebLearning\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#14 C:\xampp\htdocs\ParsehWebLearning\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#15 C:\xampp\htdocs\ParsehWebLearning\index.php(17): require('C:\\xampp\\htdocs...')
+#16 {main}
+  thrown در C:\xampp\htdocs\ParsehWebLearning\wp-includes\pluggable.php در خط 2663
+
+2022-01-07T18:28:58+00:00 CRITICAL Uncaught Error: Undefined constant "the" in C:\xampp\htdocs\ParsehWebLearning\wp-content\themes\Parsehshop\comments.php:3
+Stack trace:
+#0 C:\xampp\htdocs\ParsehWebLearning\wp-includes\comment-template.php(1554): require()
+#1 C:\xampp\htdocs\ParsehWebLearning\wp-content\themes\Parsehshop\template-parts\single\main-body.php(14): comments_template()
+#2 C:\xampp\htdocs\ParsehWebLearning\wp-includes\template.php(772): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\ParsehWebLearning\wp-includes\template.php(716): load_template('C:\\xampp\\htdocs...', false, Array)
+#4 C:\xampp\htdocs\ParsehWebLearning\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#5 C:\xampp\htdocs\ParsehWebLearning\wp-content\themes\Parsehshop\singular.php(8): get_template_part('template-parts/...')
+#6 C:\xampp\htdocs\ParsehWebLearning\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\ParsehWebLearning\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\ParsehWebLearning\index.php(17): require('C:\\xampp\\htdocs...')
+#9 {main}
+  thrown در C:\xampp\htdocs\ParsehWebLearning\wp-content\themes\Parsehshop\comments.php در خط 3
+
+2022-01-07T20:41:44+00:00 CRITICAL syntax error, unexpected identifier "comment_form" در C:\xampp\htdocs\ParsehWebLearning\wp-content\themes\Parsehshop\comments.php در خط 44
+
+2022-01-07T20:41:54+00:00 CRITICAL syntax error, unexpected token "=>", expecting ")" در C:\xampp\htdocs\ParsehWebLearning\wp-content\themes\Parsehshop\comments.php در خط 45
+
+2022-01-07T20:44:41+00:00 CRITICAL syntax error, unexpected identifier "comment_form" در C:\xampp\htdocs\ParsehWebLearning\wp-content\themes\Parsehshop\comments.php در خط 47
+
+2022-01-07T20:53:09+00:00 CRITICAL syntax error, unexpected variable "$comments_args" در C:\xampp\htdocs\ParsehWebLearning\wp-content\themes\Parsehshop\comments.php در خط 42
+

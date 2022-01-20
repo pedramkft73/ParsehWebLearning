@@ -9,15 +9,15 @@
             <?php get_template_part('template-parts/archive/loop') ?>
 
 
-                <nav class="mt-5">
-                    <ul class="pagination justify-content-center">
-                        <li class="page-item mx-2"><a class="page-link text-muted" href="#">قبلی</a></li>
-                        <li class="page-item mx-2"><a class="page-link text-muted" href="#">۱</a></li>
-                        <li class="page-item mx-2"><a class="page-link text-muted" href="#">۲</a></li>
-                        <li class="page-item mx-2"><a class="page-link text-muted" href="#">۳</a></li>
-                        <li class="page-item mx-2"><a class="page-link text-muted" href="#">بعدی</a></li>
-                    </ul>
-                </nav>
+<!--                <nav class="mt-5">-->
+<!--                    <ul class="pagination justify-content-center">-->
+<!--                        <li class="page-item mx-2"><a class="page-link text-muted" href="#">قبلی</a></li>-->
+<!--                        <li class="page-item mx-2"><a class="page-link text-muted" href="#">۱</a></li>-->
+<!--                        <li class="page-item mx-2"><a class="page-link text-muted" href="#">۲</a></li>-->
+<!--                        <li class="page-item mx-2"><a class="page-link text-muted" href="#">۳</a></li>-->
+<!--                        <li class="page-item mx-2"><a class="page-link text-muted" href="#">بعدی</a></li>-->
+<!--                    </ul>-->
+<!--                </nav>-->
 
             </div>
             <?php get_sidebar(); ?>

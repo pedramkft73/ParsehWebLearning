@@ -47,6 +47,18 @@ function parsehshop_register_sidebars() {
             'after_title'   => '</p>',
         )
     );
+
+    register_sidebar(
+        array(
+            'id'            => 'single-sidebar',
+            'name'          => __( 'Single Sidebar','parsehshop'  ),
+            'description'   => __( 'A short description of the sidebar.','parsehshop'  ),
+            'before_widget' => '',
+            'after_widget'  => '',
+            'before_title'  => '<p>',
+            'after_title'   => '</p>',
+        )
+    );
 }
 
 

@@ -1,0 +1,80 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Parseh Shop\n"
+"POT-Creation-Date: 2022-01-06 11:08+0330\n"
+"PO-Revision-Date: 2022-01-06 11:09+0330\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fa_IR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n==0 || n==1);\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: inc/menu.php:5
+msgid "Header Menu"
+msgstr "منو هدر"
+
+#: inc/sidebar.php:8
+msgid "navigation footer 1"
+msgstr "منو فوتر ۱"
+
+#: inc/sidebar.php:9 inc/sidebar.php:21 inc/sidebar.php:32 inc/sidebar.php:43
+msgid "A short description of the sidebar."
+msgstr ""
+
+#: inc/sidebar.php:20
+msgid "navigation footer 2"
+msgstr "منو فوتر 2"
+
+#: inc/sidebar.php:31
+msgid "navigation footer 3"
+msgstr "منو فوتر ۳"
+
+#: inc/sidebar.php:42
+msgid "navigation footer 4"
+msgstr "منو فوتر ۴"
+
+#: singular.php:10
+msgid "Hi every body..."
+msgstr "سلام بر همگی..."
+
+#: template-parts/header/top-navigation.php:33
+msgid "Please add the \"Header Menu\" form the admin panel"
+msgstr "لطفا از طریق پنل ادمین منو هدر را اضافه نمایید"
+
+#. Theme Name of the plugin/theme
+msgid "Parseh Shop"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "https://parsehweb.com/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Our default theme for 2020 is designed to take full advantage of the "
+"flexibility of the block editor. Organizations and businesses have the "
+"ability to create dynamic landing pages with endless layouts using the group "
+"and column blocks. The centered content column and fine-tuned typography "
+"also makes it perfect for traditional blogs. Complete editor styles give you "
+"a good idea of what your content will look like, even before you publish. "
+"You can give your site a personal touch by changing the background colors "
+"and the accent color in the Customizer. The colors of all elements on your "
+"site are automatically calculated based on the colors you pick, ensuring a "
+"high, accessible color contrast for your visitors."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Pedram Pourzeynali"
+msgstr ""

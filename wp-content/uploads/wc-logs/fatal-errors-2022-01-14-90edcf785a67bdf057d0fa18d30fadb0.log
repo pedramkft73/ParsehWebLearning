@@ -1,0 +1,6 @@
+2022-01-14T15:32:03+00:00 CRITICAL syntax error, unexpected token ")" در C:\xampp\htdocs\ParsehWebLearning\wp-content\themes\Parsehshop\template-parts\archive\inside-loop.php در خط 9
+
+2022-01-14T15:32:54+00:00 CRITICAL syntax error, unexpected token ")" در C:\xampp\htdocs\ParsehWebLearning\wp-content\themes\Parsehshop\template-parts\archive\inside-loop.php در خط 9
+
+2022-01-14T15:49:28+00:00 CRITICAL syntax error, unexpected token "<", expecting "elseif" or "else" or "endif" در C:\xampp\htdocs\ParsehWebLearning\wp-content\themes\Parsehshop\template-parts\archive\loop.php در خط 7
+

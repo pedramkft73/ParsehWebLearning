@@ -1,0 +1,4 @@
+2022-01-03T18:11:34+00:00 CRITICAL syntax error, unexpected single-quoted string "name", expecting identifier or variable or "{" or "$" در C:\xampp\htdocs\ParsehWebLearning\wp-content\themes\Parsehshop\template-parts\single\body-header.php در خط 9
+
+2022-01-03T19:33:47+00:00 CRITICAL Cannot use [] for reading در C:\xampp\htdocs\ParsehWebLearning\wp-content\themes\Parsehshop\template-parts\single\body-header.php در خط 9
+

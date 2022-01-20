@@ -3,6 +3,13 @@
 if ( ! isset( $content_width ) )
     $content_width = 800; /* pixels */
 
+
+require_once get_theme_file_path('inc/sidebar.php');
+require_once get_theme_file_path('inc/menu.php');
+require_once get_theme_file_path('inc/breadcrumb.php');
+require_once get_theme_file_path('inc/comments.php');
+require_once get_theme_file_path('inc/meta_box.php');
+
 if ( ! function_exists( 'parsehshop_setup' ) ) :
     /**
      * Sets up theme defaults and registers support for various WordPress features.
@@ -22,9 +29,12 @@ if ( ! function_exists( 'parsehshop_setup' ) ) :
 //        ) );
 
         add_theme_support( 'post-formats', array ( 'aside', 'gallery', 'quote', 'image', 'video' ) );
+        add_image_size( 'image800*350', 800, 350 );
+
     }
+    add_action( 'after_setup_theme', 'parsehshop_setup' );
 endif; // myfirsttheme_setup
-        add_action( 'after_setup_theme', 'parsehshop_setup' );
+
 
 
 if ( ! function_exists( 'parsehshop_add_theme_styles' ) ) :
@@ -64,10 +74,14 @@ function parsehshop_the_html_classes() {
     }
     echo 'class="' . esc_attr( $classes ) . '"';
 }
-require_once get_theme_file_path('inc/sidebar.php');
 
 
 
 
+
+
+		<?php echo wc_get_product_category_list( $product->get_id(), '<span class="meta-sep">,</span> ', '<span class="posted_in">' . _n( 'Category:', 'Categories:', count( $product->get_category_ids() ), 'woocommerce' ) . ' ', '</span>' ); ?>
+
+	<?php echo wc_get_product_tag_list( $product->get_id(), '<span class="meta-sep">,</span> ', '<span class="tagged_as">' . _n( 'Tag:', 'Tags:', count( $product->get_tag_ids() ), 'woocommerce' ) . ' ', '</span>' ); ?>
 ?>
 
