@@ -597,15 +597,15 @@ class GF_Field_Date extends GF_Field {
 		return $this->get_number_dropdown( $name, $id, $selected_value, $tabindex, $disabled_text, $placeholder, 1, 31 );
 	}
 
-	private function get_year_dropdown( $name = '', $id = '', $selected_value = '', $tabindex = '', $disabled_text = '', $placeholder = '', $form ) {
-		if ( $placeholder == '' ) {
-			$placeholder = esc_html__( 'Year', 'gravityforms' );
-		}
-		$year_min = apply_filters( 'gform_date_min_year', '1920', $form, $this );
-		$year_max = apply_filters( 'gform_date_max_year', date( 'Y' ) + 1, $form, $this );
-
-		return $this->get_number_dropdown( $name, $id, $selected_value, $tabindex, $disabled_text, $placeholder, $year_max, $year_min );
-	}
+//	private function get_year_dropdown( $name = '', $id = '', $selected_value = '', $tabindex = '', $disabled_text = '', $placeholder = '', $form ) {
+//		if ( $placeholder == '' ) {
+//			$placeholder = esc_html__( 'Year', 'gravityforms' );
+//		}
+//		$year_min = apply_filters( 'gform_date_min_year', '1920', $form, $this );
+//		$year_max = apply_filters( 'gform_date_max_year', date( 'Y' ) + 1, $form, $this );
+//
+//		return $this->get_number_dropdown( $name, $id, $selected_value, $tabindex, $disabled_text, $placeholder, $year_max, $year_min );
+//	}
 
 	private function get_number_dropdown( $name, $id, $selected_value, $tabindex, $disabled_text, $placeholder, $start_number, $end_number ) {
 		$str = "<select name='{$name}' id='{$id}' {$tabindex} {$disabled_text} aria-label='{$placeholder}'>";

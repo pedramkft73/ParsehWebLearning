@@ -1,5 +1,5 @@
 
-
+@import "woocommerce.css";
 @font-face {
     font-family: BYekan;
     src: url(../font/Yekan.ttf);
@@ -516,7 +516,7 @@ border-radius: 15px!important;
 	border-radius: 15px!important;
 	box-shadow: 0 0 2rem #6a788727;
 }
-.first a{
+.first >a{
 	color: #fff;
 	background-color: #EB2F06;
 	font-size: 16px;
@@ -978,7 +978,10 @@ border-radius: 15px!important;
 .related-products small, .related-products strong{
 	color: #6B6A6A!important;
 }
-
+.woocommerce .woocommerce-breadcrumb {
+	margin: 0 ;
+	font-size: 1em;
+}
 
 
 

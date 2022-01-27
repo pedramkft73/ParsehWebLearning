@@ -3178,11 +3178,11 @@ Content-Type: text/html;
 	 *
 	 * @return mixed
 	 */
-	public static function get_radio_choices( $field, $value = '', $disabled_text ) {
-		_deprecated_function( 'get_radio_choices', '1.9', 'GF_Field_Checkbox::get_radio_choices' );
-
-		return $field->get_radio_choices( $value, $disabled_text );
-	}
+//	public static function get_radio_choices( $field, $value = '', $disabled_text ) {
+//		_deprecated_function( 'get_radio_choices', '1.9', 'GF_Field_Checkbox::get_radio_choices' );
+//
+//		return $field->get_radio_choices( $value, $disabled_text );
+//	}
 
 	public static function get_field_type_title( $type ) {
 		$gf_field = GF_Fields::get( $type );

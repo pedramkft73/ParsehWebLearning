@@ -299,7 +299,7 @@ class GFPersian_Payments extends GFPersian_Core {
 		return $metas;
 	}
 
-	public function is_value_match( $is_match, $field_value/*entry['payment_status']*/, $rule_value, $rule_operator, $source_field = null, $rule ) {
+	public function is_value_match( $is_match, $field_value/*entry['payment_status']*/, $rule_value, $rule_operator,  $rule ) {
 
 		$fieldId = rgar( $rule, 'fieldId' );
 		if ( empty( $fieldId ) ) {

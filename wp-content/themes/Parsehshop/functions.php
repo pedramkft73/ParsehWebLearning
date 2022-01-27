@@ -23,6 +23,10 @@ if ( ! function_exists( 'parsehshop_setup' ) ) :
         load_theme_textdomain( 'parsehshop', get_template_directory() . '/languages' );
         add_theme_support( 'automatic-feed-links' );
         add_theme_support( 'post-thumbnails' );
+        add_theme_support( 'woocommerce' );
+        add_theme_support( 'wc-product-gallery-zoom' );
+        add_theme_support( 'wc-product-gallery-lightbox' );
+        add_theme_support( 'wc-product-gallery-slider' );
 //        register_nav_menus( array(
 //            'primary'   => __( 'Primary Menu', 'myfirsttheme' ),
 //            'secondary' => __('Secondary Menu', 'myfirsttheme' )
@@ -76,12 +80,4 @@ function parsehshop_the_html_classes() {
 }
 
 
-
-
-
-
-		<?php echo wc_get_product_category_list( $product->get_id(), '<span class="meta-sep">,</span> ', '<span class="posted_in">' . _n( 'Category:', 'Categories:', count( $product->get_category_ids() ), 'woocommerce' ) . ' ', '</span>' ); ?>
-
-	<?php echo wc_get_product_tag_list( $product->get_id(), '<span class="meta-sep">,</span> ', '<span class="tagged_as">' . _n( 'Tag:', 'Tags:', count( $product->get_tag_ids() ), 'woocommerce' ) . ' ', '</span>' ); ?>
 ?>
-
