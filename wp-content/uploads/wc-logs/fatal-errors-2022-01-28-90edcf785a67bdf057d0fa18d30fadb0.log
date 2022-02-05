@@ -1,0 +1,64 @@
+2022-01-28T08:07:02+00:00 CRITICAL syntax error, unexpected token "}", expecting "," or ";" در C:\xampp\htdocs\ParsehWebLearning\wp-content\themes\Parsehshop\woocommerce\single-product\title.php در خط 32
+
+2022-01-28T08:08:41+00:00 CRITICAL syntax error, unexpected token "endif", expecting end of file در C:\xampp\htdocs\ParsehWebLearning\wp-content\themes\Parsehshop\woocommerce\single-product\title.php در خط 31
+
+2022-01-28T08:09:57+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function the_field(), 0 passed in C:\xampp\htdocs\ParsehWebLearning\wp-content\themes\Parsehshop\woocommerce\single-product\title.php on line 28 and at least 1 expected in C:\xampp\htdocs\ParsehWebLearning\wp-content\plugins\advanced-custom-fields\includes\api\api-template.php:75
+Stack trace:
+#0 C:\xampp\htdocs\ParsehWebLearning\wp-content\themes\Parsehshop\woocommerce\single-product\title.php(28): the_field()
+#1 C:\xampp\htdocs\ParsehWebLearning\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ParsehWebLearning\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1600): wc_get_template('single-product/...')
+#3 C:\xampp\htdocs\ParsehWebLearning\wp-includes\class-wp-hook.php(307): woocommerce_template_single_title('')
+#4 C:\xampp\htdocs\ParsehWebLearning\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#5 C:\xampp\htdocs\ParsehWebLearning\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\ParsehWebLearning\wp-content\themes\Parsehshop\woocommerce\content-single-product.php(80): do_action('woocommerce_sin...')
+#7 C:\xampp\htdocs\ParsehWebLearning\wp-includes\template.php(772): require('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\ParsehWebLearning\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('C:\\xampp\\htdocs...', false)
+#9 C:\xampp\htdocs\ParsehWebLearning\wp-content\themes\Parsehshop\woocommerce\single-product.php(49): wc_get_template_part('content', 'single-product')
+#10 C:\xampp\htdocs\ParsehWebLearning\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\ParsehWebLearning\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\ParsehWebLearning\index.php(17): require('C:\\xampp\\htdocs...')
+#13 {main}
+  thrown در C:\xampp\htdocs\ParsehWebLearning\wp-content\plugins\advanced-custom-fields\includes\api\api-template.php در خط 75
+
+2022-01-28T08:30:58+00:00 CRITICAL Uncaught Error: Object of class WP_Error could not be converted to string in C:\xampp\htdocs\ParsehWebLearning\wp-content\themes\Parsehshop\inc\woocommerce.php:6
+Stack trace:
+#0 C:\xampp\htdocs\ParsehWebLearning\wp-content\themes\Parsehshop\woocommerce\single-product\title.php(26): parseh_shop_get_product_category(71, 'product_brand')
+#1 C:\xampp\htdocs\ParsehWebLearning\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ParsehWebLearning\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1600): wc_get_template('single-product/...')
+#3 C:\xampp\htdocs\ParsehWebLearning\wp-includes\class-wp-hook.php(307): woocommerce_template_single_title('')
+#4 C:\xampp\htdocs\ParsehWebLearning\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#5 C:\xampp\htdocs\ParsehWebLearning\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\ParsehWebLearning\wp-content\themes\Parsehshop\woocommerce\content-single-product.php(80): do_action('woocommerce_sin...')
+#7 C:\xampp\htdocs\ParsehWebLearning\wp-includes\template.php(772): require('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\ParsehWebLearning\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('C:\\xampp\\htdocs...', false)
+#9 C:\xampp\htdocs\ParsehWebLearning\wp-content\themes\Parsehshop\woocommerce\single-product.php(49): wc_get_template_part('content', 'single-product')
+#10 C:\xampp\htdocs\ParsehWebLearning\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\ParsehWebLearning\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\ParsehWebLearning\index.php(17): require('C:\\xampp\\htdocs...')
+#13 {main}
+  thrown در C:\xampp\htdocs\ParsehWebLearning\wp-content\themes\Parsehshop\inc\woocommerce.php در خط 6
+
+2022-01-28T08:31:35+00:00 CRITICAL Uncaught Error: Object of class WP_Error could not be converted to string in C:\xampp\htdocs\ParsehWebLearning\wp-content\themes\Parsehshop\inc\woocommerce.php:6
+Stack trace:
+#0 C:\xampp\htdocs\ParsehWebLearning\wp-content\themes\Parsehshop\woocommerce\single-product\title.php(26): parseh_shop_get_product_category(71, 'product_brand')
+#1 C:\xampp\htdocs\ParsehWebLearning\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ParsehWebLearning\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1600): wc_get_template('single-product/...')
+#3 C:\xampp\htdocs\ParsehWebLearning\wp-includes\class-wp-hook.php(307): woocommerce_template_single_title('')
+#4 C:\xampp\htdocs\ParsehWebLearning\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#5 C:\xampp\htdocs\ParsehWebLearning\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\ParsehWebLearning\wp-content\themes\Parsehshop\woocommerce\content-single-product.php(80): do_action('woocommerce_sin...')
+#7 C:\xampp\htdocs\ParsehWebLearning\wp-includes\template.php(772): require('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\ParsehWebLearning\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('C:\\xampp\\htdocs...', false)
+#9 C:\xampp\htdocs\ParsehWebLearning\wp-content\themes\Parsehshop\woocommerce\single-product.php(49): wc_get_template_part('content', 'single-product')
+#10 C:\xampp\htdocs\ParsehWebLearning\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\ParsehWebLearning\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\ParsehWebLearning\index.php(17): require('C:\\xampp\\htdocs...')
+#13 {main}
+  thrown در C:\xampp\htdocs\ParsehWebLearning\wp-content\themes\Parsehshop\inc\woocommerce.php در خط 6
+
+2022-01-28T09:22:55+00:00 CRITICAL syntax error, unexpected end of file در C:\xampp\htdocs\ParsehWebLearning\wp-content\themes\Parsehshop\woocommerce\single-product\add-to-cart\variable.php در خط 92
+
+2022-01-28T16:46:55+00:00 CRITICAL syntax error, unexpected token "echo" در C:\xampp\htdocs\ParsehWebLearning\wp-content\themes\Parsehshop\woocommerce\single-product\add-to-cart\simple.php در خط 26
+
+2022-01-28T17:12:28+00:00 CRITICAL syntax error, unexpected token "<", expecting end of file در C:\xampp\htdocs\ParsehWebLearning\wp-content\themes\Parsehshop\woocommerce\single-product\add-to-cart\simple.php در خط 25
+

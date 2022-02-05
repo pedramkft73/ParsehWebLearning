@@ -14,9 +14,19 @@ defined( 'ABSPATH' ) || exit;
 
 ?>
 <script type="text/template" id="tmpl-variation-template">
+    <div class="d-flex justify-content-between align-items-center mb-1 mt-3">
+        <small class="text-muted">وضعیت :</small>
+        <small style="color: #43A047">	<div class="woocommerce-variation-availability">{{{ data.variation.availability_html }}}</div></small>
+    </div>
+    <hr>
+    <div class="d-flex justify-content-between align-items-center mb-1 mt-3">
+        <small class="text-muted">قمیت محصول :</small>
+        <small class="text-muted"><div class="woocommerce-variation-price">{{{ data.variation.price_html }}}</div></small>
+    </div>
+    <hr>
 	<div class="woocommerce-variation-description">{{{ data.variation.variation_description }}}</div>
-	<div class="woocommerce-variation-price">{{{ data.variation.price_html }}}</div>
-	<div class="woocommerce-variation-availability">{{{ data.variation.availability_html }}}</div>
+
+
 </script>
 <script type="text/template" id="tmpl-unavailable-variation-template">
 	<p><?php esc_html_e( 'Sorry, this product is unavailable. Please choose a different combination.', 'woocommerce' ); ?></p>

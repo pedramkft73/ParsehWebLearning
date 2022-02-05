@@ -35,6 +35,22 @@ if ( post_password_required() ) {
     <div class="card border-0 product">
         <div class="card-body">
             <div class="row">
+                <div class="col-12 col-lg-1 mb-3 mb-lg-0 share-like-icon">
+                    <ul class="nav flex-row flex-lg-column">
+                        <li class="nav-item mb-3">
+                            <a href="#" class="nav-link"><i class="fas fa-heart align-middle"></i></a>
+                        </li>
+                        <li class="nav-item mb-3">
+                            <a href="#" class="nav-link"><i class="fas fa-share-alt align-middle"></i></a>
+                        </li>
+                        <li class="nav-item mb-3">
+                            <a href="#" class="nav-link"><i class="fas fa-heart align-middle"></i></a>
+                        </li>
+                        <li class="nav-item mb-3">
+                            <a href="#" class="nav-link"><i class="fas fa-share-alt align-middle"></i></a>
+                        </li>
+                    </ul>
+                </div>
                 <div class="col-12 col-lg-4 d-flex flex-column justify-content-between mb-3 mb-lg-0">
 	<?php
 	/**

@@ -23,26 +23,35 @@ if ( ! defined( 'ABSPATH' ) ) {
 ?>
 <li <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>">
 
-	<div id="comment-<?php comment_ID(); ?>" class="comment_container">
+	<div id="comment-<?php comment_ID(); ?>" class="comment_container card border-0 blog-comment">
+        <div class="card-body">
+            <div class="my-custom-rating">
+                <?php
+                /**
+                 * The woocommerce_review_before_comment_meta hook.
+                 *
+                 * @hooked woocommerce_review_display_rating - 10
+                 */
+                do_action( 'woocommerce_review_before_comment_meta', $comment );
 
-		<?php
-		/**
-		 * The woocommerce_review_before hook
-		 *
-		 * @hooked woocommerce_review_display_gravatar - 10
-		 */
-		do_action( 'woocommerce_review_before', $comment );
-		?>
+                ?>
 
-		<div class="comment-text">
+            </div>
+            <div class="d-flex align-items-start mb-4">
+                <div class="blog-avar">
+            <?php
+            /**
+             * The woocommerce_review_before hook
+             *
+             * @hooked woocommerce_review_display_gravatar - 10
+             */
+            do_action( 'woocommerce_review_before', $comment );
+            ?>
+                </div>
+
+		<div class="comment-text ">
 
 			<?php
-			/**
-			 * The woocommerce_review_before_comment_meta hook.
-			 *
-			 * @hooked woocommerce_review_display_rating - 10
-			 */
-			do_action( 'woocommerce_review_before_comment_meta', $comment );
 
 			/**
 			 * The woocommerce_review_meta hook.
@@ -62,6 +71,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 			do_action( 'woocommerce_review_after_comment_text', $comment );
 			?>
+        </div>
 
+            </div>
 		</div>
 	</div>

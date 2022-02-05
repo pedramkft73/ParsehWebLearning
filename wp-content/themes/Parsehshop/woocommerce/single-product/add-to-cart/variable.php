@@ -31,12 +31,16 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 	<?php if ( empty( $available_variations ) && false !== $available_variations ) : ?>
 		<p class="stock out-of-stock"><?php echo esc_html( apply_filters( 'woocommerce_out_of_stock_message', __( 'This product is currently out of stock and unavailable.', 'woocommerce' ) ) ); ?></p>
 	<?php else : ?>
+        <div class="row">
+            <div class="col-12 col-lg-7">
+                <div class="product-color mb-4">
+                    <div class="mb-5">
 		<table class="variations" cellspacing="0">
 			<tbody>
 				<?php foreach ( $attributes as $attribute_name => $options ) : ?>
 					<tr>
-						<th class="label"><label for="<?php echo esc_attr( sanitize_title( $attribute_name ) ); ?>"><?php echo wc_attribute_label( $attribute_name ); // WPCS: XSS ok. ?></label></th>
-						<td class="value">
+						<th class="label d-block"><label class="mt-1" for="<?php echo esc_attr( sanitize_title( $attribute_name ) ); ?>">انتخاب <?php echo wc_attribute_label( $attribute_name ); // WPCS: XSS ok. ?> مورد نظر:</label></th>
+						<td class="value d-block  mb-3 ">
 							<?php
 								wc_dropdown_variation_attribute_options(
 									array(
@@ -52,8 +56,20 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 				<?php endforeach; ?>
 			</tbody>
 		</table>
-		<?php do_action( 'woocommerce_after_variations_table' ); ?>
-
+                    <?php do_action( 'woocommerce_after_variations_table' ); ?>
+                </div>
+            </div>
+        </div>
+    <div class="col-12 col-lg-5 product-price">
+        <h6 class="text-muted mt-1">پیش فاکتور:</h6>
+        <div class="d-flex justify-content-between align-items-center mb-1 mt-3">
+            <small class="text-muted">کد محصول:</small>
+            <small class="text-muted"><?php echo ( $sku = $product->get_sku() ) ? $sku : esc_html__( 'N/A', 'woocommerce' ); ?></small>
+        </div>
+        <div class="d-flex justify-content-between align-items-center mb-1 mt-3">
+            <small class="text-muted">ارسال از :</small>
+            <small style="color: #EB2F06;"><?php  if (function_exists('the_field')){the_field('shipping_from');} ?></small>
+        </div>
 		<div class="single_variation_wrap">
 			<?php
 				/**
@@ -76,6 +92,8 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 				do_action( 'woocommerce_after_single_variation' );
 			?>
 		</div>
+    </div>
+    </div>
 	<?php endif; ?>
 
 	<?php do_action( 'woocommerce_after_variations_form' ); ?>

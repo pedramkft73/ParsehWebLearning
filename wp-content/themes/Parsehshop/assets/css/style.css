@@ -523,7 +523,7 @@ border-radius: 15px!important;
 	border-radius: 7px;
 	display: inline-block!important;
 }
-.first a:hover{
+.first> a:hover{
 	color: #fff!important;
 }
 .second a{
@@ -913,7 +913,7 @@ border-radius: 15px!important;
 	border-radius: 15px!important;
 	margin-bottom: 20px;
 }
-.product i{
+.product .share-like-icon i{
 	color: #0ABDE3;
 	font-size: 20px;
 }

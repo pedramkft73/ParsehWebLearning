@@ -22,4 +22,27 @@ if ( ! defined( 'ABSPATH' ) ) {
 global $product;
 
 ?>
-<p class="<?php echo esc_attr( apply_filters( 'woocommerce_product_price_class', 'price' ) ); ?>"><?php echo $product->get_price_html(); ?></p>
+<div class="row">
+<div class="col-12 col-lg-7 "></div>
+<div class="col-12 col-lg-5 product-price" id="my-custom-single-product-summery">
+    <h6 class="text-muted mt-1">پیش فاکتور:</h6>
+    <div class="d-flex justify-content-between align-items-center mb-1 mt-3">
+        <small class="text-muted">کد محصول:</small>
+        <small class="text-muted"><?php echo ( $sku = $product->get_sku() ) ? $sku : esc_html__( 'N/A', 'woocommerce' ); ?></small>
+    </div>
+    <div class="d-flex justify-content-between align-items-center mb-1 mt-3">
+        <small class="text-muted">ارسال از :</small>
+        <small style="color: #EB2F06;"><?php  if (function_exists('the_field')){the_field('shipping_from');} ?></small>
+    </div>
+    <div class="d-flex justify-content-between align-items-center mb-1 mt-3">
+        <small class="text-muted">وضعیت :</small>
+        <small style="color: #43A047">	<div class="woocommerce-variation-availability"><?php  echo wc_get_stock_html( $product ); // WPCS: XSS ok. ?></div></small>
+    </div>
+    <hr>
+    <div class="d-flex justify-content-between align-items-center mb-1 mt-3">
+        <small class="text-muted">قمیت محصول :</small>
+        <small class="text-muted"><div class="woocommerce-variation-price"><?php echo $product->get_price_html(); ?></div></small>
+    </div>
+    <hr>
+<!--<p id="product-top-price" class="--><?php //echo esc_attr( apply_filters( 'woocommerce_product_price_class', 'price' ) ); ?><!--">--><?php //echo $product->get_price_html(); ?><!--</p>-->
+</div></div>

@@ -9,6 +9,7 @@ require_once get_theme_file_path('inc/menu.php');
 require_once get_theme_file_path('inc/breadcrumb.php');
 require_once get_theme_file_path('inc/comments.php');
 require_once get_theme_file_path('inc/meta_box.php');
+require_once get_theme_file_path('inc/woocommerce.php');
 
 if ( ! function_exists( 'parsehshop_setup' ) ) :
     /**
